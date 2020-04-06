@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Material Css</title>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<!--Import Google Icon Font-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+	</head>
+	<body>
+		<nav class="deep-purple lighten-2 ">
+			<div class="nav-wrapper container">
+				<a href="#!" class="brand-logo"><img src="images/sports-logo-transparent.png" alt="" class="responsive-img circle"></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#tournament">Tournament</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a class="btn-large  waves-effect waves-light green darken-3 white-text darken-text-2 tooltipped  modal-trigger" href="#modal2"  data-position="right" data-tooltip="Signup">Signup <i class="large material-icons left">face</i></a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="sass.html">Home</a></li>
+			<li><a href="badges.html">About</a></li>
+			<li><a href="collapsible.html">Contact</a></li>
+			<li><a href="mobile.html">Team</a></li>
+			<li><a href="mobile.html">Tournament</a></li>
+		</ul>
+		
+		<!-- Corousel -->
+		<div class="carousel carousel-slider center">
+			<div class="carousel-fixed-item center">
+				<h1 class="white-text center-align"> Go fight for a team</h1>
+				<p class="white-text center-align"> Awesome Tournaments coming soon</p>
+				<a class="btn-large pulse waves-effect waves-light deep-purple white-text darken-text-2 tooltipped  modal-trigger" href="#modal1"  data-position="left" data-tooltip="Login">Login <i class="large material-icons left">face</i></a>
+			</div>
+			<a class="carousel-item" href="#two!"><img src="images/artimg-2.png"></a>
+			<a class="carousel-item" href="#one!"><img src="images/artimg-1.png"></a>
+			<a class="carousel-item" href="#three!"><img src="images/artimg-3.png"></a>
+		</div>
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<div class="row">
+					<h4 class="center-align">Login</h4>
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6">
+								<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+								<label for="first_name">First Name</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="last_name" type="text" class="validate">
+								<label for="last_name">Last Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password" type="password" class="validate">
+								<label for="password">Password</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+				<a href="#!" class="modal-close waves-effect waves-green btn green">Login</a>
+			</div>
+		</div>
+		<!-- Modal Structure -->
+		<div id="modal2" class="modal">
+			<div class="modal-content">
+				<div class="row">
+					<h4 class="center-align">Signup</h4>
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6">
+								<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+								<label for="first_name">First Name</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="last_name" type="text" class="validate">
+								<label for="last_name">Last Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password" type="password" class="validate">
+								<label for="password">Password</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+				<a href="#!" class="modal-close waves-effect waves-green btn green">Signup</a>
+			</div>
+		</div>
+		<!-- about us -->
+		<section class="container" id="about">
+			<h1 class="center-align">About Us</h1>
+			<div class="row ">
+				<div class="col s4 m4 l4 offset-l4"><hr></div>
+			</div>
+			<div class="row">
+				<div class="col m6 s12">
+					<img src="images/img2.png" alt="" class="responsive-img about-img">
+				</div>
+				<div class="col m6 s12">
+					<h3>About me</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sed voluptatum perferendis, officia magni, dignissimos. Praesentium beatae qui explicabo porro iusto, sapiente asperiores dolore, in exercitationem rem optio ea impedit?</p>
+					<a href="#team" class="btn team-btn  waves-effect white-text waves-light  darken-2 ">Team</a>
+				</div>
+			</div>
+		</section>
+		
+		<!-- OUR TEAM -->
+		<section class="container" id="team">
+			<h1 class="center-align">Our Team</h1>
+			<div class="row ">
+				<div class="col s4 m4 l4 offset-l4"><hr></div>
+			</div>
+			
+			<div class="row">
+				<div class="col l4 m4 s12">
+					<div class="card hoverable ">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator team-img" src="images/img1.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aut officiis rerum expedita minima facere, velit ratione quas natus distinctio ea molestias dolorum sit deleniti numquam neque sed cupiditate possimus..</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col l4 m4 s12">
+					<div class="card hoverable">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator team-img" src="images/artimg-2.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aut officiis rerum expedita minima facere, velit ratione quas natus distinctio ea molestias dolorum sit deleniti numquam neque sed cupiditate possimus..</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col l4 m4 s12">
+					<div class="card hoverable">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator team-img" src="images/img4.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aut officiis rerum expedita minima facere, velit ratione quas natus distinctio ea molestias dolorum sit deleniti numquam neque sed cupiditate possimus..</p>
+						</div>
+					</div>
+				</div>
+				<div class="col l6 m6 s12">
+					<div class="card hoverable">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator team-img" src="images/img3.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aut officiis rerum expedita minima facere, velit ratione quas natus distinctio ea molestias dolorum sit deleniti numquam neque sed cupiditate possimus..</p>
+						</div>
+					</div>
+				</div>
+				<div class="col l6 m6 s12">
+					<div class="card hoverable">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator team-img" src="images/img2.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Nepoleon Lopez<i class="material-icons right">close</i></span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aut officiis rerum expedita minima facere, velit ratione quas natus distinctio ea molestias dolorum sit deleniti numquam neque sed cupiditate possimus..</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Contact -->
+			<section class="container" id="contact">
+				<h1 class="center-align">Contact Us</h1>
+				<div class="row">
+					<div class="col s4 m4 l4 offset-l4"><hr></div>
+				</div>
+				
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">account_circle</i>
+								<input id="icon_prefix" type="text" class="validate">
+								<label for="icon_prefix">First Name</label>
+							</div>
+							<div class="input-field col s6">
+								<i class="material-icons prefix">phone</i>
+								<input id="icon_telephone" type="tel" class="validate">
+								<label for="icon_telephone">Telephone</label>
+							</div>
+						</div>
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">mode_edit</i>
+										<textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+										<label for="textarea1">Textarea</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<a class="center-align waves-effect waves-teal btn-large purple accent-2 send"onclick="M.toast({html: 'Happy to hear from you !' ,classes :'rounded'})">Send Us
+							<i class="large material-icons right">send</i>
+						</a>
+					</form>
+				</div>
+			</section>
+			
+			<!-- FAQ -->
+			<section class="container" id="faq">
+				<h1 class="center-align">FAQ</h1>
+				<div class="row ">
+					<div class="col s4 m4 l4 offset-l4"><hr></div>
+				</div>
+				<ul class="collapsible popout hoverable">
+					<li class="active">
+						<div class="collapsible-header"><i class="material-icons">question_answer</i>First</div>
+						<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil qui hic nostrum deserunt sequi a sit odit vitae id dicta, aliquam veritatis sunt, quas, autem adipisci voluptas quia. Accusamus, eveniet!</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">question_answer</i>Second</div>
+						<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quod vel ex blanditiis ullam iure dolorem aut aliquid ducimus dolore? Consequatur ipsa, accusantium, perspiciatis mollitia explicabo inventore? Officiis, id, ipsum!</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">question_answer</i>Third</div>
+						<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime doloremque sunt quis non quod repellat unde, facilis quidem aliquid voluptatem quae, ipsa eum ipsum cum quisquam. Eius at, cumque!</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">question_answer</i>Third</div>
+						<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae unde et necessitatibus quaerat iste, commodi, impedit, rerum delectus ea doloremque blanditiis ipsam odit libero! Saepe dolor totam illum quae non.</span></div>
+					</li>
+				</ul>
+			</section>
+			
+			<!-- Tournament -->
+			<section class="container" id="tournament">
+				<h1 class="center-align">Tournaments</h1>
+				<div class="row ">
+					<div class="col s4 m4 l4 offset-l4"><hr></div>
+				</div>
+				<div class="tournaments">New Tournaments are <span class="purple-text status">COMMING SOON !</span></div>
+				<div class="video-container hoverable">
+					<iframe class="tooltipped hoverable" data-position="bottom" data-tooltip="Check this Video" width="853" height="315" src="https://www.youtube.com/embed/hqvGOPB0KmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</div>
+				</iframe>
+				
+			</section>
+			<!-- FOOTER -->
+			<footer class="page-footer deep-purple lighten-2">
+				<div class="container">
+					<div class="row">
+						<div class="col l6 s12">
+							<h5 class="white-text">LCO Amazing BasketBall Tournament</h5>
+							<p class="grey-text text-lighten-4"><span class="black-text darken-2 contact-span">Contact US: </span> Mobile: +91999999999.</p>
+							<p class="grey-text text-lighten-4"><span class="black-text darken-2 address-span">Address: </span> LCO Basketball Ground,
+							55 - Fictional Homes, Fictional Road
+							Near Fictional Lake.
+						India.</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text"></h5>
+						<ul>
+							<li><a class="grey-text text-lighten-3 tooltipped"data-position="right" data-tooltip="Facebook" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a class="grey-text text-lighten-3 tooltipped"data-position="left" data-tooltip="Instagram" href="#!"><i class="fab fa-instagram"></i></a></li>
+							<li><a class="grey-text text-lighten-3 tooltipped" href="#!"data-position="right" data-tooltip="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a class="grey-text text-lighten-3 tooltipped" href="#!"data-position="left" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright grey darken-2">
+				<div class="container">
+					<div class="center-align">© 2020 Copyright Limited </div>
+				</div>
+				<div class="scrolltop">
+					<i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="script.js">
+			
+		</script>
+		
+	</body>
+</html>

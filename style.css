@@ -1,0 +1,81 @@
+*{
+font-family: 'Josefin Sans', sans-serif;
+scroll-behavior: smooth;
+}
+img{
+width: 100%;
+height: 100vh;
+}
+section {
+margin: 200px auto !important;
+}
+.circle{
+width: 100% !important;
+height: 10vh !important;
+}
+.input-field{
+padding: 30px 0 !important;
+margin-top: 30px  !important;
+}
+h1{
+color: #2196f3;
+letter-spacing: 5px;
+font-weight: 400;
+}
+.team-img{
+width: 100px;
+height: 50vh;
+}
+.about-img{
+width:70%;
+height: 5%;
+border-radius: 50%;
+}
+.team-btn{
+width: 40%;
+background-color: #CE93D8;
+}
+.team-btn:hover{
+background-color: #6A1B9A;
+}
+.tournaments{
+font-size: 26px !important;
+letter-spacing: 3px;
+margin: 50px auto;
+display: flex;
+justify-content: center;
+}
+.status{
+color: #EAB543 !important;
+letter-spacing: 5px;
+font-weight: bold;
+margin: 0 10px;
+}
+.contact-span ,.address-span{
+color: #202020 !important;
+font-size: 15px;
+letter-spacing: 2px;
+font-weight: bolder;
+}
+.fa-facebook-f,
+.fa-instagram,
+.fa-linkedin-in,
+.fa-twitter{
+font-size: 25px;
+margin: 8px auto;
+}
+#myBtn{
+position: fixed;
+bottom: 20px;
+right: 40px;
+z-index: 99;
+border: none;
+color: #fff;
+background:rgba(95, 39, 205,0.9);
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+}
+#myBtn:hover{
+background:rgba(95, 39, 205,1.0);
+}
